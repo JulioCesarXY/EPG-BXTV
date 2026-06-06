@@ -11,7 +11,6 @@ HEADERS = {
     "user-agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36"
 }
 
-# Puxa o cookie direto das configurações secretas do GitHub Actions
 CF_CLEARANCE = os.getenv("CF_CLEARANCE")
 GA_COOKIE = os.getenv("GA_COOKIE", "GA1.2.858734980.1780751968")
 
@@ -28,28 +27,33 @@ session = requests.Session()
 session.headers.update(HEADERS)
 
 def get_categories():
+    print("[+] Tentando mapear categorias...")
     try:
         res = session.get(f"{BASE_URL}/categories?per_page=100", cookies=COOKIES, timeout=15)
+        print(f"[i] Status da resposta da API de Categorias: {res.status_code}")
         if res.status_code == 200:
             return {cat['name']: cat['id'] for cat in res.json()}
         return {}
-    except:
+    except Exception as e:
+        print(f"[-] Erro de conexão na API: {e}")
         return {}
 
 def build_categorized_m3u():
     categories_map = get_categories()
-    if not categories_map:
-        print("[-] Não foi possível obter as categorias. O cookie pode ter expirado.")
-        return
-
     filename = "canais_bxtv_categorizado.m3u"
-    total_canais = 0
     
+    # Sempre cria o arquivo para garantir que o Git não quebre as Actions
     with open(filename, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
+        
+        if not categories_map:
+            print("[-] Não foi possível obter as categorias. Gerando arquivo M3U limpo por segurança.")
+            return
 
+        total_canais = 0
+        print(f"\n[+] Iniciando extração...")
+        
         for cat_name, cat_id in categories_map.items():
-            # Loop simples para pegar até 3 páginas de conteúdo antigo por categoria (300 itens)
             for page in range(1, 4):
                 url_posts = f"{BASE_URL}/posts?categories={cat_id}&per_page=100&page={page}"
                 try:
@@ -80,7 +84,7 @@ def build_categorized_m3u():
                     break
                 time.sleep(0.3)
             
-    print(f"[V] Lista atualizada com {total_canais} canais.")
+        print(f"[V] Lista criada com sucesso. Total de canais: {total_canais}")
 
 if __name__ == "__main__":
     build_categorized_m3u()
