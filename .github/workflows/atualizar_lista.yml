@@ -1,0 +1,38 @@
+name: Atualizar Lista IPTV
+
+on:
+  schedule:
+    # Roda automaticamente todos os dias às 06:00 e às 18:00 UTC
+    - cron: '0 6,18 * * *'
+  workflow_dispatch: # Permite que você clique em um botão para rodar manualmente quando quiser
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Baixar código do repositório
+      uses: actions/checkout@v4
+
+    - name: Configurar o Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Instalar Dependências
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Executar o Script de Extração
+      env:
+        CF_CLEARANCE: ${{ secrets.CF_CLEARANCE }}
+      run: python script.py
+
+    - name: Salvar e dar Push na lista atualizada
+      run: |
+        git config --global user.name 'GitHub Actions Bot'
+        git config --global user.email 'actions@github.com'
+        git add canais_bxtv_categorizado.m3u
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Lista IPTV atualizada automaticamente" && git push)
+        
