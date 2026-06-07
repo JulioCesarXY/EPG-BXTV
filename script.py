@@ -1,4 +1,5 @@
-import requests
+# Usando curl_cffi para simular a assinatura de rede do Chrome e passar pela Cloudflare
+from curl_cffi import requests
 import re
 import time
 import os
@@ -12,22 +13,21 @@ HEADERS = {
 }
 
 CF_CLEARANCE = os.getenv("CF_CLEARANCE")
-GA_COOKIE = os.getenv("GA_COOKIE", "GA1.2.858734980.1780751968")
 
 if not CF_CLEARANCE:
     print("[-] ERRO: O Secret 'CF_CLEARANCE' não foi configurado no GitHub!")
     exit(1)
 
 COOKIES = {
-    "cf_clearance": CF_CLEARANCE,
-    "_ga": GA_COOKIE
+    "cf_clearance": CF_CLEARANCE
 }
 
-session = requests.Session()
+# Inicializa a sessão com personificação (imitation) do Chrome estável
+session = requests.Session(impersonate="chrome")
 session.headers.update(HEADERS)
 
 def get_categories():
-    print("[+] Tentando mapear categorias...")
+    print("[+] Tentando mapear categorias com curl_cffi...")
     try:
         res = session.get(f"{BASE_URL}/categories?per_page=100", cookies=COOKIES, timeout=15)
         print(f"[i] Status da resposta da API de Categorias: {res.status_code}")
@@ -42,16 +42,16 @@ def build_categorized_m3u():
     categories_map = get_categories()
     filename = "canais_bxtv_categorizado.m3u"
     
-    # Sempre cria o arquivo para garantir que o Git não quebre as Actions
+    # Sempre cria o arquivo para o Git não dar erro fatal nas Actions
     with open(filename, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n\n")
         
         if not categories_map:
-            print("[-] Não foi possível obter as categorias. Gerando arquivo M3U limpo por segurança.")
+            print("[-] Não foi possível obter as categorias. O cookie pode ter expirado ou o block persiste.")
             return
 
         total_canais = 0
-        print(f"\n[+] Iniciando extração...")
+        print(f"\n[+] Iniciando extração organizada...")
         
         for cat_name, cat_id in categories_map.items():
             for page in range(1, 4):
@@ -82,7 +82,7 @@ def build_categorized_m3u():
                             total_canais += 1
                 except:
                     break
-                time.sleep(0.3)
+                time.sleep(0.5)
             
         print(f"[V] Lista criada com sucesso. Total de canais: {total_canais}")
 
