@@ -162,13 +162,13 @@ https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEar
 #EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2026/06/WildEarth.jpg", WildEarth
 https://wildearth-xumo.amagi.tv/master.m3u8
 
-#EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/12/30A-Darcizzle-Offshore.jpg", 30A Darcizzle Offshore
-https://30a-tv.com/feeds/720p/40.m3u8
-
 #EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/09/food-food.jpg", Food Food
 https://www.youtube.com/embed/zI6Li8w4Vhs?enablejsapi=1&#038;listType=playlist&#038;list=PLI-l1OOUnVtMmCgVi30XfBwb3qxWwk6Dn&#038;rel=0&#038;disablekb=0&#038;autoplay=0&#038;cc_load_policy=0&#038;cc_lang_pref=&#038;iv_load_policy=1&#038;loop=0&#038;fs=1&#038;playsinline=0&#038;autohide=2&#038;theme=dark&#038;color=red&#038;controls=1&#038;
 
-#EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/inwild.jpg", Inwild
+#EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/inwild.jpg", Inwild (1)
+https://30a-tv.com/feeds/720p/40.m3u8
+
+#EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/inwild.jpg", Inwild (2)
 https://amg00861-terninternation-inwild-samsunguk-w5wic.amagi.tv/playlist/amg00861-terninternation-inwild-samsunguk/playlist.m3u8
 
 #EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/love-nature-1.jpg", Love Nature
@@ -510,6 +510,9 @@ https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2026/06/malar-tv.jpg", Malar TV
 https://cdn-3.pishow.tv/live/473/master.m3u8
 
+#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2025/05/udhayam-tv.jpg", Udhayam TV
+https://view.rcserver.in/tmp_hls8/udhayamtv/index.m3u8
+
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2025/11/ndtvlanka.lk_.jpg", NDTVLANKA
 https://g4wlkqqwl23a-hls-live.5centscdn.com/NDTVLANKA/1ff5fa54d14c3ff6c6bd3918bbb7db5d.sdp/playlist.m3u8
 
@@ -555,7 +558,10 @@ https://live.streamjo.com/eetlive/eettv.m3u8
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/stn-tv.jpg", STN TV
 https://play.applelive.in/stntv/stntv.m3u8
 
-#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/thala-tv.jpg", Thalaa TV
+#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/thala-tv.jpg", Thalaa TV (1)
+https://ipcloud.live/sachintv/musichd/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/thala-tv.jpg", Thalaa TV (2)
 https://www.yupptv.com/yupptvnew/channels/thalaa-tv/live/embed
 
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/09/DD-Tamil.jpg", DD Tamil
