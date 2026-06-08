@@ -162,13 +162,13 @@ https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEar
 #EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2026/06/WildEarth.jpg", WildEarth
 https://wildearth-xumo.amagi.tv/master.m3u8
 
+#EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/12/30A-Darcizzle-Offshore.jpg", 30A Darcizzle Offshore
+https://30a-tv.com/feeds/720p/40.m3u8
+
 #EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/09/food-food.jpg", Food Food
 https://www.youtube.com/embed/zI6Li8w4Vhs?enablejsapi=1&#038;listType=playlist&#038;list=PLI-l1OOUnVtMmCgVi30XfBwb3qxWwk6Dn&#038;rel=0&#038;disablekb=0&#038;autoplay=0&#038;cc_load_policy=0&#038;cc_lang_pref=&#038;iv_load_policy=1&#038;loop=0&#038;fs=1&#038;playsinline=0&#038;autohide=2&#038;theme=dark&#038;color=red&#038;controls=1&#038;
 
-#EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/inwild.jpg", Inwild (1)
-https://30a-tv.com/feeds/720p/40.m3u8
-
-#EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/inwild.jpg", Inwild (2)
+#EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/inwild.jpg", Inwild
 https://amg00861-terninternation-inwild-samsunguk-w5wic.amagi.tv/playlist/amg00861-terninternation-inwild-samsunguk/playlist.m3u8
 
 #EXTINF:-1 group-title="Infotainment TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/love-nature-1.jpg", Love Nature
@@ -179,9 +179,6 @@ https://tv-trtworld.medya.trt.com.tr/master_720.m3u8
 
 #EXTINF:-1 group-title="Int'l News TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2023/08/fox-news-live.jpg", Fox News
 https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary_300.m3u8
-
-#EXTINF:-1 group-title="Int'l News TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2023/08/cheddar.jpg", Cheddar News
-https://livestream.chdrstatic.com/b93e5b0d43ea306310a379971e384964acbe4990ce193c0bd50078275a9a657d/cheddar-42620/cheddarweblive/cheddar/primary/2.m3u8
 
 #EXTINF:-1 group-title="Int'l News TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2023/08/nbc-news.jpg", NBC News
 https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s/Live/channel(nnn)/master.mpd?audio=all&amp;subtitle=all&amp;forcedNarrative=true
@@ -408,6 +405,9 @@ https://fl1003.bozztv.com/ushba40/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="Music TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/09/bxtv.jpg", 📺 BXTV Live
 https://rpn3.bozztv.com/dvrfl07/ushba-t4/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="Music TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/07/Steelbird-Music.jpg", Steelbird Music
+https://cdn2.in/SteelbirdMusicTVhls/live.m3u8
+
 #EXTINF:-1 group-title="Music TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/06/company-tv.jpg", Company TV Music
 https://5929b138b139d.streamlock.net/CompanyTV/smil:CompanyTV.smil/chunklist_w904868973_b1428000_slita.m3u8
 
@@ -495,9 +495,6 @@ https://streams2.sofast.tv/vglive-sk-462904/playlist.m3u8
 #EXTINF:-1 group-title="Sports TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2026/06/RACER-International.jpg", RACER International
 https://amg00378-mavtv-amg00378c2-rakuten-us-1048.playouts.now.amagi.tv/playlist/amg00378-mavtvfast-motorsportsnetwork-rakutenus/playlist.m3u8
 
-#EXTINF:-1 group-title="Sports TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2026/06/Bahrain-Sports-2.jpg", Bahrain Sports 2
-https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/playlist.m3u8
-
 #EXTINF:-1 group-title="Sports TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2026/06/MadeinBO-TV.jpg", MadeinBO TV
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
 
@@ -543,6 +540,9 @@ https://galaxyott.live//hls/sanaplus.m3u8
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/shatv.jpg", Sha TV
 https://play.applelive.in/shatv/shatv.m3u8
 
+#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/Sachin-TV-Music.jpg", Sachin TV Music
+https://ipcloud.live/sachintv/musichd/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/gem-tv.jpg", Gem TV
 https://gemtv.circle7stream.com/gem/fcce47a8559e30755582c396ce7fce9e.sdp/chunks.m3u8
 
@@ -558,17 +558,11 @@ https://live.streamjo.com/eetlive/eettv.m3u8
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/stn-tv.jpg", STN TV
 https://play.applelive.in/stntv/stntv.m3u8
 
-#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/thala-tv.jpg", Thalaa TV (1)
-https://ipcloud.live/sachintv/musichd/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/thala-tv.jpg", Thalaa TV (2)
+#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/10/thala-tv.jpg", Thalaa TV
 https://www.yupptv.com/yupptvnew/channels/thalaa-tv/live/embed
 
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/09/DD-Tamil.jpg", DD Tamil
 https://cdn-2.pishow.tv/live/26/master.m3u8
-
-#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/07/tamiltv.jpg", Thamil TV
-https://amigofx.com:1936/tv360/tv360/playlist.m3u8
 
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/07/n-tv.jpg", NTV HD
 https://galaxyott.live//hls/ntv.m3u8
@@ -608,6 +602,9 @@ https://mumt02.tangotv.in/BRIOTV/index.m3u8
 
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/02/jith-tv.jpg", Jith TV
 https://sscloud7.com/live/jithtv/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2021/02/oli-tv.jpg", Tamil Oli TV
+https://view.rcserver.in/tmp_hls7/tamilolitv/index.m3u8
 
 #EXTINF:-1 group-title="Tamil TV" tvg-logo="https://bx-tv.com/wp-content/uploads/2023/02/IBC-Tamil.jpg", IBC Tamil
 https://webcast.emn.onl/IBC/tracks-v1a1/mono.m3u8
