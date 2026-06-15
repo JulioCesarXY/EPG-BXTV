@@ -31,8 +31,8 @@ jobs:
 
     - name: Salvar e dar Push na lista atualizada
       run: |
-        git config --global user.name 'GitHub Actions Bot'
-        git config --global user.email 'actions@github.com'
+        git config --local user.email "104462712+JulioCesarXY@users.noreply.github.com"
+        git config --local user.name "JulioCesarXY"
         git add canais_bxtv_categorizado.m3u
         git diff --quiet && git diff --staged --quiet || (git commit -m "Lista IPTV atualizada automaticamente" && git push)
         
